@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct PennyWiseApp: App {
@@ -13,5 +14,10 @@ struct PennyWiseApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: DataItem.self)
     }
+}
+
+#Preview {
+    ContentView()
 }
